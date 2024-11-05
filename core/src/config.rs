@@ -10,14 +10,14 @@ pub(crate) const IOS_CLIENT_ID: &str = "58bd3c95768941ea9eb4350aaa033eb3";
 // android or ios needs to be mocked, the `os_version` has to be set to a valid version.
 // Otherwise, client-token or login5 requests will fail with a generic invalid-credential error.
 /// See [std::env::consts::OS]
-pub const OS: &str = std::env::consts::OS;
+pub const OS: &str = "android";
 
 // valid versions for some os:
 // 'android': 30
 // 'ios': 17
 /// See [sysinfo::System::os_version]
 pub fn os_version() -> String {
-    sysinfo::System::os_version().unwrap_or("0".into())
+    "31".into()
 }
 
 #[derive(Clone, Debug)]
