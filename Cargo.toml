@@ -1,6 +1,6 @@
 [package]
 name = "librespot"
-version = "0.6.0-dev"
+version = "0.6.1-dev"
 rust-version = "1.75"
 authors = ["Librespot Org"]
 license = "MIT"
