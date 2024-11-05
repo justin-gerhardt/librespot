@@ -123,6 +123,8 @@ impl HttpClient {
             VERSION_STRING
         );
 
+        let user_agent_str = "Spotify/8.9.68.456 Android/23 (Android SDK built for x86)";
+
         let user_agent = HeaderValue::from_str(user_agent_str).unwrap_or_else(|err| {
             error!("Invalid user agent <{}>: {}", user_agent_str, err);
             HeaderValue::from_static(FALLBACK_USER_AGENT)
