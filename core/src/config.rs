@@ -17,7 +17,7 @@ pub const OS: &str = "android";
 // 'ios': 17
 /// See [sysinfo::System::os_version]
 pub fn os_version() -> String {
-    "31".into()
+    "23".into()
 }
 
 #[derive(Clone, Debug)]
